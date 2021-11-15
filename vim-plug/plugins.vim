@@ -12,5 +12,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
-colorscheme gruvbox
 " ===== activating some plugins =====
+colorscheme gruvbox
