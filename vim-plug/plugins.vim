@@ -11,6 +11,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'gruvbox-community/gruvbox'  
   Plug 'jiangmiao/auto-pairs'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'vim-airline/vim-airline'
+  Plug 'arakashic/chromatica.nvim'
 call plug#end()
 
 " ===== activating some plugins =====
