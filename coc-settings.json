@@ -3,11 +3,14 @@
     "ccls": {
       "command": "ccls",
       "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-      "rootPatterns": [".ccls", "compile_commands.son", ".git/", ".hg/"],
+      "rootPatterns": [".ccls", "compile_commands.son", ".vim/", ".git/", ".hg/"],
       "initializationOptions": {
         "cache": {
           "directory": "/tmp/ccls"
         },
+        "highlight": {"lsRanges": true},
+        "clangd.semanticHighlighting": true,
+        "coc.preferences.semanticTokensHighlights": true, 
         "clang": {
           // from clang -v -fsyntax-only -x c++ /dev/null
           "extraArgs": [

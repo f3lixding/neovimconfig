@@ -12,7 +12,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'jiangmiao/auto-pairs'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'vim-airline/vim-airline'
-  Plug 'arakashic/chromatica.nvim'
+  Plug 'jackguo380/vim-lsp-cxx-highlight'
 call plug#end()
 
 " ===== activating some plugins =====
