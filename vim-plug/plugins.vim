@@ -16,5 +16,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 call plug#end()
 
 " ===== activating some plugins =====
-let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_contrast_dark="soft"
 colorscheme gruvbox
