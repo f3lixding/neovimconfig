@@ -13,6 +13,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'vim-airline/vim-airline'
   Plug 'jackguo380/vim-lsp-cxx-highlight'
+  Plug 'kyazdani42/nvim-web-devicons' " for file icons
+  Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
 
 " ===== activating some plugins =====
