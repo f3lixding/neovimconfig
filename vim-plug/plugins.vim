@@ -15,8 +15,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'jackguo380/vim-lsp-cxx-highlight'
   Plug 'kyazdani42/nvim-web-devicons' " for file icons
   Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " ===== activating some plugins =====
 let g:gruvbox_contrast_dark="soft"
 colorscheme gruvbox
+
+let g:airline_theme='base16_gruvbox_dark_soft'
