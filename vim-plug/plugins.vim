@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'kyazdani42/nvim-web-devicons' " for file icons
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'nvim-lua/plenary.nvim'
 call plug#end()
 
 " ===== activating some plugins =====
