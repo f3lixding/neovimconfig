@@ -164,3 +164,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" Custom mappings
+nnoremap <silent><leader>vd :call CocAction('jumpDefinition', 'vsplit')<cr>
+nnoremap <silent><leader>hd :call CocAction('jumpDefinition', 'split')<cr>
+nnoremap <silent><leader>vr :call CocAction('jumpReferences', 'vsplit')<cr>
+nnoremap <silent><leader>hr :call CocAction('jumpReferences', 'split')<cr>
