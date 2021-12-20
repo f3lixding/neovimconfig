@@ -10,13 +10,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'gruvbox-community/gruvbox'  
   Plug 'jiangmiao/auto-pairs'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'vim-airline/vim-airline'
-  Plug 'jackguo380/vim-lsp-cxx-highlight'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
   Plug 'kyazdani42/nvim-web-devicons' " for file icons
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-lua/plenary.nvim' " lua module for async programming
+  Plug 'neovim/nvim-lspconfig' 
+  Plug 'hrsh7th/nvim-cmp' " a third party completion engine
+  Plug 'hrsh7th/cmp-nvim-lsp'  " the completion source for the third completion engine
+  Plug 'hrsh7th/cmp-vsnip' " snippet engine for cmp-nvim-lsp
+  Plug 'hrsh7th/vim-vsnip' " snippet engine for cmp-nvim-lsp
+  Plug 'ray-x/lsp_signature.nvim' " function signature for nvim lsp
 call plug#end()
 
 " ===== activating some plugins =====

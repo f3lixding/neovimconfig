@@ -21,3 +21,5 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" better terminal instantiation
+nnoremap <leader>tj <cmd>bo split<CR> <cmd>term<CR> <cmd>res 20<CR> 
