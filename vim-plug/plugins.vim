@@ -9,6 +9,8 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'gruvbox-community/gruvbox'  
+  Plug 'rebelot/kanagawa.nvim'
+  Plug 'mhinz/vim-startify'
   Plug 'jiangmiao/auto-pairs'
   Plug 'vim-airline/vim-airline'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
@@ -26,6 +28,6 @@ call plug#end()
 
 " ===== activating some plugins =====
 let g:gruvbox_contrast_dark="soft"
-colorscheme gruvbox
+colorscheme kanagawa 
 
 let g:airline_theme='base16_gruvbox_dark_soft'

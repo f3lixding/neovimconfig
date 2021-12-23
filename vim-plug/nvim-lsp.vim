@@ -46,30 +46,14 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'ccls' }
+local servers = { 'ccls', 'pyright' }
+local capabilities = require('nvim-cmp')
+local init_options = require('language-server-init-options')
 for _, lsp in ipairs(servers) do
-  local capabilities = require('nvim-cmp')
   nvim_lsp[lsp].setup {
     capabilities = capabilities,
     on_attach = on_attach,
-    init_options = {
-      highlight = {
-        lsRanges = true;
-      },
-      clang = {
-          -- from clang -v -fsyntax-only -x c++ /dev/null
-          extraArgs = {
-            "-isystem/usr/local/include",
-            "-isystem/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1",
-            "-isystem/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include",
-            "-isystem/Library/Developer/CommandLineTools/usr/include",
-            "-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
-            "-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
-          };
-          -- from clang -print-resource-dir
-          resourceDir = "/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0";
-      },
-    },
+    init_options = init_options[lsp],
     flags = {
       debounce_text_changes = 150,
     },
